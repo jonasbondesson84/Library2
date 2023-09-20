@@ -6,8 +6,7 @@ public class Main {
 
         String choice;
         Scanner sc = new Scanner(System.in);
-        Library myLibrary = new Library();
-        ArrayList<Book> listOfBooks = new ArrayList<>();
+        Library myLibrary = new Library("Sala");
 
         System.out.println("Welcome to my library. Choose what you want to do. \n");
         do {
@@ -38,7 +37,6 @@ public class Main {
                 }
                 case "6" -> {
                     myLibrary.returnBook();
-
                 }
                 default -> {
                     System.out.println("Wrong input, try again. \n");

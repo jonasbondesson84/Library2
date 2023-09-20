@@ -3,7 +3,17 @@ import java.util.Scanner;
 
 public class Library {
     Scanner sc = new Scanner(System.in);
-    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<Book> books;
+    private String libraryName;
+
+    public Library(String libraryName) {
+        this.libraryName = libraryName;
+        this.books = new ArrayList<>();
+    }
+    public Library() {
+        this.libraryName="";
+        this.books= new ArrayList<>();
+    }
 
     public ArrayList<Book> getBooks() {
         return books;
